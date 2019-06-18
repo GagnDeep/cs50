@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my project</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <svg id = 'map'></svg>
+        <svg id = 'pie'></svg>
+        <svg id = 'histogram'></svg>
+        <input type="range" name="year"/>
+        <select>
+            <option value= 'emissionsPerCapita'>emissions per capita</option>
+            <option value='emissions'>Total emissions</option>
+        </select>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+    <script type="text/javascript" src="formatters.js"></script>
+    <script type="text/javascript" src="histogram.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="pie.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<%include ./partials/header.ejs%>
+<div id="bodyIndex">
+<div class="ui secondary  menu" id="navBar">
+
+  <%if(currentUser){%>
+ <a class="item">Hey! <%=currentUser.username%> check out your profile </a>
+ <a class="active item" href="/profile">
+    Profile
+  </a>
+  <%}else{%>
+  <a class="item" href="/login" id="login">
+    LogIn <i class="sign in alternate icon"></i>
+  </a>
+  <a class="item" href="/register" id="signup">
+    SignUp <i class="reply icon"></i>
+  </a>
+  <%}%>
+  <div class="right menu">
+    <%if(currentUser){%>
+    <a class="ui item" id="logout">
+      Logout <i class="sign in alternate icon"></i>
+    </a>
+    <%}%>
+  </div>
+</div>
+
+<h1>
+    The Great
+    <br>
+    <span id="colorDisplay">RGB</span>
+    <br>Color game
+</h1>
+<div class="stripe">
+    <button id="reset" class="buttons">New Colors</button>
+    <span id="message"></span>
+    <button id="easyBtn" class="buttons">Easy</button>
+    <button id="hardBtn" class="selected buttons">Hard</button>
+</div>
+        <div class="container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+</div>
+
+
+<!--<svg-->
+<!--    version="1.1"-->
+<!--    baseProfile="full"-->
+<!--    xmlns="http://www.w3.org/2000/svg" >-->
+<!--  </svg>-->
+<!--  <input type="range" step="1">-->
+<%include ./partials/footer.ejs%>

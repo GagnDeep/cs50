@@ -1,0 +1,33 @@
+<%include ./partials/header%>
+<%include ./partials/header.ejs%>
+
+<h1>
+    The Great
+    <br>
+    <span id="loginHeader">RGB Color Game</span>
+    <br>
+    Profile
+</h1>
+
+<form class="ui form" method="POST" action="/profile">
+  <div class="field">
+    <label>Image</label>
+    <input type="text" name="image" placeholder="image url">
+  </div>
+  <div class="field">
+    <label>Description</label>
+    <input type="text" name="description" placeholder="description">
+  </div>
+  <div class="field">
+    <label>age</label>
+    <input type="text" name="age" placeholder="age">
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      <input type="checkbox" tabindex="0" class="hidden">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>
+<%include ./partials/footer%>
